@@ -1,11 +1,11 @@
-package Application.Repositories;
+package Application.DAOs;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete
 
-import Application.Model.Usuario;
+import Application.Model.User;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UsuarioRepository extends CrudRepository<Usuario, Long> {
+public interface UserDAO extends CrudRepository<User, Long>, UserDAOCustom {
 
 }

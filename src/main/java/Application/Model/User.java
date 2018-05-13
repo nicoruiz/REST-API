@@ -3,16 +3,16 @@ package Application.Model;
 import javax.persistence.*;
 
 @Entity
-public class Usuario {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @Column(nullable = false)
     private String username;
 
-    public Usuario() {}
+    public User() {}
 
-    public Usuario(String username) {
+    public User(String username) {
         this.username = username;
     }
 
@@ -20,7 +20,7 @@ public class Usuario {
         return this.id;
     }
 
-    public String getName() {
+    public String getUsername() {
         return username;
     }
 }
