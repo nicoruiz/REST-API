@@ -31,7 +31,8 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.PUT)
     public String updateUser(@RequestBody User user) {
-        userDAO.update(user);
+        //El metodo save en una entidad con un ID ya existente, funciona como un update
+        userDAO.save(user);
         return "Updated";
     }
 }

@@ -13,11 +13,6 @@ public class UserDAOImpl implements UserDAOCustom {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Override
-    public void update(User user) {
-
-    }
-
     //Ejemplo
     @Override
     public List getFirstNamesLike(String firstName) {
